@@ -3,7 +3,7 @@ import browser from 'webextension-polyfill';
 
 // Shorten url
 const shortenUrl = async (API_KEY, urlToShorten, password) => {
-    let API_HOST = 'https://kutt.it';
+    let API_HOST = 'https://link.sun-asterisk.vn';
 
     try {
         const { host, userOptions } = await browser.storage.local.get(['host', 'userOptions']);
@@ -14,7 +14,7 @@ const shortenUrl = async (API_KEY, urlToShorten, password) => {
         // else use default host
     } catch (e) {
         // do something if fetching from localstorage fails
-        API_HOST = 'https://kutt.it';
+        API_HOST = 'https://link.sun-asterisk.vn';
     }
 
     // shorten function
