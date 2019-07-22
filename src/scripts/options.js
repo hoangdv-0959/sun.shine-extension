@@ -18,6 +18,12 @@ const dev__checkbox = '#customhost__label--checkbox';
 const history__checkbox = '#history__label--checkbox';
 const autocopy__checkbox = '#autocopy__label--checkbox';
 
+/**
+ * Dev mode config
+ */
+const dev__mode__container = '.dev__mode--container';
+const enableDevMode = false;
+
 document.on('DOMContentLoaded', async () => {
     let { key, pwd, userOptions, host } = await browser.storage.local.get(['key', 'pwd', 'userOptions', 'host']);
     // apikey to string
@@ -46,6 +52,9 @@ document.on('DOMContentLoaded', async () => {
     }
     $(autocopy__checkbox).checked = userOptions.autoCopy;
     $(history__checkbox).checked = userOptions.keepHistory;
+
+    // handler UI for dev mode
+    toggleInputVisibility(enableDevMode, dev__mode__container);
 });
 
 // Store Data and Alert message
