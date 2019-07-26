@@ -70,6 +70,10 @@ const updateRatingButton = () => {
     }
 };
 
+const hideRatingButton = () => {
+    $(rate__button).classList.add('d-none');
+};
+
 document.on('DOMContentLoaded', async () => {
     let updatedHTML;
 
@@ -96,6 +100,9 @@ document.on('DOMContentLoaded', async () => {
 
         // rating button
         updateRatingButton();
+
+        // hide rating button
+        hideRatingButton();
     } else {
         alert('Enable History from Options Page');
         browser.runtime.openOptionsPage();
