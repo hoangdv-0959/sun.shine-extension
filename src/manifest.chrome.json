@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Sun.shine",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Shorten long URLs with just one click.",
   "icons": {
     "16": "assets/favicon-16.png",
