@@ -1,10 +1,10 @@
 {
   "manifest_version": 2,
-  "name": "Kutt",
-  "version": "3.0.1",
+  "name": "Sun.shine",
+  "version": "1.0.1",
   "browser_specific_settings": {
     "gecko": {
-      "id": "support@kutt.it"
+      "id": "sun.avengers.group@gmail.com"
     }
   },
   "description": "Shorten long URLs with just one click.",
@@ -25,11 +25,11 @@
     "default_title": "Shorten this URL",
     "browser_style": false
   },
-  "author": "abhijithvijayan",
+  "author": "hoangdv",
   "background": {
     "scripts": ["js/background.js"]
   },
-  "homepage_url": "https://github.com/abhijithvijayan/kutt-extension",
+  "homepage_url": "https://link.sun-asterisk.vn/",
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
   "options_ui": {
     "page": "options.html",
@@ -43,5 +43,5 @@
     "http://*/*",
     "https://*/*"
   ],
-  "short_name": "Kutt"
+  "short_name": "Sun"
 }
